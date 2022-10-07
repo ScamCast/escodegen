@@ -2499,6 +2499,11 @@
                 this.generateExpression(expr.source, Precedence.Assignment, E_TTT),
                 ')'
             ], Precedence.Call, precedence);
+        },
+      
+        Import: function(expr, precedence, flag) {
+            var result = ['import'];
+            return result;
         }
     };
 
